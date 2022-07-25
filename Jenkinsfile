@@ -5,7 +5,6 @@ pipeline {
         stage('Build Java Application') {
             steps {
                 sh 'sudo mvn clean install package'
-                echo "test"
             }
         }
         stage('Docker Image Build For My Java Application') {
